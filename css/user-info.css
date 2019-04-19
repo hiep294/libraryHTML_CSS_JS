@@ -1,0 +1,42 @@
+
+  .avatar{
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/avatar.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    text-align: center;
+  } 
+
+  ul#tasks li{
+    background-color: rgb(68, 73, 82);    
+    margin-bottom: 5px; 
+  }
+  ul#tasks li a{
+    padding: 10px;
+    display: inline-block;   
+  }
+
+  ul#tasks li a:hover{
+    font-weight: bold;
+  }
+
+  ul#tasks li form{
+    display: flex;
+  }
+
+  /* ul#tasks li form input{
+    border-radius: 0px;
+    height: 28px;
+    flex-grow: 1;    
+  } */
+
+  ul#tasks li form button.search{
+    min-width: 80px;
+    max-width: 80px;
+    padding: 3px;
+    text-align: left;
+  }
+
+  
+  

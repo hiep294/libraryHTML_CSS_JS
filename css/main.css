@@ -1,0 +1,49 @@
+.container-main{
+  display: flex;
+  justify-content: space-between
+}
+
+article#main-col{
+  width: 65%;
+}
+
+article#main-col h1{
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+article#main-col ul#policies li{
+  background-color: #e6e6e6;
+  padding: 20px;
+  margin-bottom: 5px;
+  border: #ccc solid 1px;
+  list-style-type: none;
+}
+
+aside#sidebar{
+  width: 30%;
+}
+
+aside#sidebar h3{
+  margin-top: 6px;
+  font-size: 20px;
+  text-align: center;
+}
+
+aside#sidebar h3 i{
+  font-size: 10px;
+}
+
+aside#sidebar form#login-form .field{
+  margin-right: 15px;
+}
+
+aside#sidebar form#login-form input{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 0;
+}
+
+
+/* dark class-> be defined in global */

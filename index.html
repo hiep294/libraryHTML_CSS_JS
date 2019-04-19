@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/showcase.css" />
+    <link rel="stylesheet" href="./css/searchbox.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/user-info.css">
+    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="global.css" />
+
+    
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+
+
+    <title>Document</title>
+  </head>
+  <body>
+      
+
+    <header>
+      <div class="container container-header">
+        <div id="branding">
+          <h1><span class="highlight">OpenMind</span> Library</h1>
+        </div>
+        <nav id="navigator">
+          <ul>
+            <li class="current">
+              <a href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+            </li>
+            <li>
+              <a href="#login-neo"
+                ><i class="fa fa-sign-in fa-lg"></i> Log in</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="showcase">
+      <div class="container">
+        <h1>OpenMind Library Official Site</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh odio,
+          lacinia vitae nibh et, tempor sodales sem.
+        </p>
+      </div>
+    </section>
+
+    <section id="searchbox">
+      <div class="container container-searchbox">
+        <h1>Search Book In Library &nbsp</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="keyword: all, course, author, title, review, ,... "
+          />
+          <select name="" id="">
+            <option value="all">All</option>
+            <option value="course">Course</option>
+            <option value="author">Author</option>
+            <option value="title">Title</option>
+            <option value="review">Review</option>
+          </select>
+          <button type="submit" class="button_1">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container container-main">
+        <article id="main-col">
+          <h1 class="page-title">Policy</h1>
+          <ul id="policies">
+            <li>
+              <h3>How to borrow or return books</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                vulputate massa massa, eu euismod ante iaculis id. Fusce eu
+                libero non massa eleifend molestie. Duis porta, massa id blandit
+                egestas, quam odio tristique purus, et feugiat arcu leo id urna.
+                Sed a aliquam justo, rutrum ornare ante. Etiam lobortis dolor a
+                suscipit feugiat. Etiam sem augue, tempor non dui et, semper
+                aliquet est. Integer quis velit sed elit consectetur pulvinar
+                nec eu lorem. Maecenas varius, nibh imperdiet bibendum mollis,
+                sapien dolor dictum nunc, eget venenatis metus purus at ligula.
+                C
+              </p>
+            </li>
+            <li>
+              <h3>Penalty</h3>
+              <p>
+                Duis porta, massa id blandit egestas, quam odio tristique purus,
+                et feugiat arcu leo id urna. Sed a aliquam justo, rutrum ornare
+                ante. Etiam lobortis dolor a suscipit feugiat. Etiam sem augue,
+                tempor non dui et, semper al
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        <div id="login-neo"></div>
+        <aside id="sidebar">
+
+          <div id="login" class="dark">
+            <h3 name="login">Log in</h3>
+            <form id="login-form">
+              <div class="field">
+                <label for="email"><i class="fa fa-envelope fa-fw"></i> Email</label><br />
+                <input type="email" placeholder="openmind@gmail.com" />
+              </div>
+              <div class="field">
+                <label for="password"><i class="fa fa-key fa-fw"></i> Password</label><br />
+                <input type="password" placeholder="*******" />
+              </div>
+              <button class="button_1">Submit</button>
+            </form>
+          </div>
+
+          
+          <div id="user-info" class="dark display-none">
+            <center><div class="avatar"></div></center>
+            <h3 name="name"><a href="#login-neo">HIEP NGUYEN</a></h3> 
+            
+            <ul id="tasks">
+              <li>
+                <form action="">
+                  <button class="button_1 search" onclick="return kindOfSearch(this)"><i class="fa fa-search fa-fw"></i> <span>Student</span></button>
+                  <input type="text" class="ip">
+                </form>
+              </li>
+              <li><a href="javascript:void(0);"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
+              <li><a href="javascript:void(0);" id="open-basket"><i class="fa fa-shopping-basket fa-fw"></i> Book Basket (<span style="color: yellow">0</span>)</a></li>
+              <li><a href="javascript:void(0);"><i class="fa fa-ticket fa-fw"></i> Ticket Management</a></li>
+              <li><a href="javascript:void(0);"><i class="fa fa-book fa-fw"></i> Book Management</a></li>
+              <li><a href="javascript:void(0);"><i class="fa fa-wrench fa-fw"></i> Change Password</a></li>
+              <li><a href="javascript:void(0);" id="logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li> 
+              
+            </ul>
+
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>OpenMind Library, Copyright &copy; 2019</p>
+    </footer>
+    
+    <div id="bookBasket" class="popup display-none">
+      <div class="popup-content">
+        <div class="popup-header">
+          <div class="main">
+            <div class="basket-image"></div>            
+          </div>              
+          <div id="close-basket">&times;</div>
+        </div>
+        <div class="popup-body">
+          <div class="user">
+            <h2 id="student-name">No student</h2>
+            <p><span id="student-email">Unknown email</span> <i class="fa fa-trash fa-fw"></i></p>
+          </div>
+          <div id="books">
+              <div class="book"> 
+                <div class="book-image"></div>
+                <div class="book-info">
+                  <h4 id="title" class="title">aaa</h4>
+                  <p>Author(s): aa</p>
+                </div>
+                <div>
+                  <i class="fa fa-trash fa-fw" id="'+i+'" onclick="deleteBook(this)">
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+        <hr class="hr-else">
+        <div class="popup-footer">
+          <button class="button_1">Confirm</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javascript/header.js"></script>
+    <script src="./javascript/variables.js"></script>
+    <script src="./javascript/basket.js"></script>
+    <script>
+      //login
+      const login = document.querySelector('#login-form');
+      login.onsubmit = (e) => {
+        // console.log(e);
+        //login display off
+        e.target.parentElement.classList.add("display-none");
+        //user display on
+        document.querySelector('#user-info').classList.remove('display-none');
+        //sth else
+        window.location.replace("#login-neo");
+        //none-submit action
+        return false;
+      }
+
+      //logout
+      const logout = document.querySelector('#logout');
+      logout.onclick = () => {
+        const check = confirm('Do you want to logout?');
+        if (check) {
+          //user display off
+          document.querySelector('#user-info').classList.add('display-none');
+          //login display on
+          document.querySelector('#login').classList.remove('display-none');
+          //sth else
+          window.location.replace("#login-neo");
+        }
+      }
+      
+      // const kindOfSearch = document.querySelector('#kind-of-search');
+      kindOfSearch = (e) => {
+        let current = e.children[1].innerHTML;
+        (current === 'Student')? e.children[1].innerHTML = 'Book' : e.children[1].innerHTML = 'Student';
+        return false;
+      }
+    </script>
+
+    
+  </body>
+</html>

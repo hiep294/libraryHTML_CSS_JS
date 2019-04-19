@@ -1,0 +1,40 @@
+
+  #searchbox {
+    background: #35424a;
+    color: #fff;
+    padding: 15px 0;
+  }
+
+  .container-searchbox{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #searchbox form{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  #searchbox form input[type="text"], .ip{
+    padding: 4px;
+    height: 29px;
+    flex-grow: 1;
+    border: none;
+    border-radius: 0px;
+  }
+  #searchbox form select{    
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0px;
+    height: 37px;
+    padding-left: 8px;
+    color: #fff;
+    background: url('../img/select.png') no-repeat 95% center;
+    background-color: #e8491d;
+  }
+
+  #searchbox form select option{
+    background-color: #e8491d;
+  }
+
